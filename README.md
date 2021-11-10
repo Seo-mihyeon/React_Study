@@ -17,7 +17,7 @@
 
 ## QnA
 1. import시 중괄호 사용 유무의 차이
- : 변수를 보내는 방식에 따른 차이
+ - 변수를 보내는 방식에 따른 차이
 ex )
     export default A; ---- X
     export B; ---- O
