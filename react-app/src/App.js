@@ -9,12 +9,16 @@ import './App.css';
 
 class App extends Component {
 
-  // Component 실행 시 
-  // constructor 함수가 있다면 제일 먼저 실행되어 초기화를 담당한다.
   constructor(props){
     super(props);
     this.state = {
-      subject:{title:'WEB', sub:'World Wide Web !'}
+      subject:{title:'WEB', sub:'World Wide Web !'},
+      contents:[
+        {id:1, title: 'HTML', desc:'HTML is for information'},
+        {id:2, title: 'CSS', desc:'CSS is for design'},
+        {id:3, title: 'JavaScript', desc:'Javascript is for interactive'}
+
+      ]
     }
   }
 
@@ -23,7 +27,7 @@ class App extends Component {
       <div className="App">
         <Subject title="WEB" sub="World Wide Web !"/>
         <Subject title={this.state.subject.title} sub={this.state.subject.sub}/>
-        <TOC/>
+        <TOC title={this.state.contents}/>
         <Content title="HTML" desc="HTML is HyperText Markup Language"/>
       </div>
     );

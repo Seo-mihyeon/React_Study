@@ -23,3 +23,9 @@ ex )
     export B; ---- O
 default 붙은경우 중괄호 사용 X
 default 붙지않은경우 중괄호 사용 O
+
+2. props 와 state
+- props : 읽기 전용
+ ( 부모 컴포넌트로부터 상속해서 사용하기에 수정 불가능 )
+- state : 변경 가능
+ ( 컴포넌트 내부에서 선언 )
